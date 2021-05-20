@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151320;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  font-size: 100px;
+  position: relative;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  height: 0.1em;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #fd004c,
+    #fe9000,
+    #fff020,
+    #3edf4b,
+    #3363ff,
+    #b102b7
+  );
+  background-size: 200% 100%;
+  bottom: -0.1em;
+  transition: 1.5s;
+}
+
+a:hover:before {
+  background-position: 100% 0;
+}
